@@ -1,0 +1,59 @@
+@font-face
+  font-family: 'text'
+  src: url("~@/assets/fonts/2.woff2") format('woff2')
+
+@font-face
+  font-family: 'title'
+  src: url("~@/assets/fonts/CosiAzure-Ultra.woff2") format('woff2')
+
+$unit: 12px
+
+$melon: rgba(254, 197, 187, 1)
+
+$manatee: rgba(142, 154, 175, 1)
+$languid-lavender: rgba(203, 192, 211, 1)
+$pale-pink: rgba(239, 211, 215, 1)
+$pale-purple-pantone: rgba(254, 234, 250, 1)
+$lavender-web: rgba(222, 226, 255, 1)
+$green-desat: rgba(86, 111, 104, 1)
+$teal: #014550
+$cyan: #04db8e
+
+$white: #EEEEFF
+$black: #21212F
+
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-weight: normal
+  --unit: 1rem
+  user-select: none
+
+html, body
+  height: 100vh
+  width: 100vw
+
+#app
+  height: 100%
+  background-image: linear-gradient(130deg, #8e9aafff, #cbc0d3ff, #efd3d7ff, #feeafaff, #dee2ffff)
+
+h1
+  font-family: 'title'
+  font-size: 5 * $unit
+  text-transform: capitalize
+  color: $manatee
+  mix-blend-mode: difference
+  // -webkit-text-stroke: 1px $melon
+
+.hidden
+  visibility: hidden
+  pointer-events: none
+
+.fill-fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
